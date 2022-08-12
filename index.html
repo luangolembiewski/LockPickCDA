@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+        <div class="caixa-titulo">
+            <h1 id="titulo">Destrave o carro!</h1>
+        </div>
+        <section class="caixa-centro">
+            <h2 id="tempo">40s</h2>
+            <section class="caixa-tempo">
+                <div class="barra-tempo"></div>
+            </section>
+            <section class="caixa-pinos">
+                <img src="img/pino.png" id="pino1" class="pinos">
+                <img src="img/pino.png" id="pino2" class="pinos">
+                <img src="img/pino.png" id="pino3" class="pinos">
+                <img src="img/pino.png" id="pino4" class="pinos">
+                <img src="img/pino.png" id="pino5" class="pinos">
+                <img src="img/pino.png" id="pino6" class="pinos">
+                <img src="img/pino.png" id="pino7" class="pinos">
+                <img src="img/pino.png" id="pino8" class="pinos">
+                <img src="img/pino.png" id="pino9" class="pinos">
+                <img src="img/pino.png" id="pino10" class="pinos">
+            </section>
+        </section>
+        <section class="caixa-chave">
+            <div id="ch">
+                <img src="img/chave.png" class="chave">
+            </div>
+        </section>
+        <div class="caixa-locais"></div>
+        <div class="botao">
+            <button id="refresh">
+                <img src="img/reload.png" height="50" width="50" onclick="Refresh()">
+            </button>
+        </div>
+        <div id="sons">
+            <audio class="som-alarme" src="mp3/alarme2.mp3" loop ></audio>
+            <audio class="som-pino"src="mp3/pino.mp3"></audio>
+        </div>
+</body>
+</html>

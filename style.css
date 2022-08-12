@@ -1,0 +1,141 @@
+#titulo{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+    margin-top: 5px;
+}
+#tempo{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    margin-top: 5px;
+    height: 10px;
+}
+.caixa-titulo {
+    width: 500px;
+    height: 40px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+.caixa-centro {
+    width: 500px;
+    height: 280px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+.caixa-tempo{
+    width: 450px;
+    height: 8px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: rgb(156, 156, 156);
+}
+.barra-tempo{
+    height: 100%;
+    border-radius: 5px;
+    width: 0;
+    margin-top: 0px;
+    background-color: #0fd439; 
+ }
+ .animacao-tempo{
+    animation: animacao-barra-tempo 40s linear;
+ }
+.caixa-pinos {
+    margin-top: 85px;
+    text-align: center;
+}
+.pinos {
+    width: 28px;
+    height: 125px;
+    margin-top: 0px;
+    padding: 8px;
+    position: relative;
+    z-index: 2;
+}
+.movimento-pino {
+    position: relative;
+    animation: subir-pino 500ms linear;
+    top: -40px;
+}
+.caixa-chave {
+    top: 2px;
+    width: 500px;
+    height: 35px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin: 0 auto;
+    position: relative;
+    background-color: rgb(19, 18, 18);
+}
+.chave-horizontal {
+    animation: animacao-chave-ida-volta 1.5s infinite alternate linear;
+}
+div#ch {
+    margin-top: 49px;
+    height: 10px;
+    width: 1px;
+    left: 460px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    background-color: rgb(10, 9, 9);
+    z-index:1;
+}
+.chave {
+    position: relative;
+    top: -42px;
+    width: 500px;
+    height: 20px;
+    left: 8px;
+    z-index:1;
+}
+.click {
+    animation: animacao-chave-click 250ms linear;
+}
+.caixa-locais {
+    position: relative;
+    top: 15px;
+    width: 500px;
+    height: 8px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-image: url('img/tempos.png');
+}
+.botao{
+    text-align: center;
+    margin-top: 25px;
+}
+button#refresh{
+    margin: 5px;
+    border-radius: 15px;
+    background-color: rgb(10, 9, 9);
+}
+#sons{
+    text-align: center;
+    margin-top: 50px;
+}
+@keyframes animacao-chave-ida-volta {
+    from{ left: 1px; }
+    to { left: 497px; }
+}
+@keyframes animacao-chave-click {
+    0%{ transform: rotate(0); }
+    50% { transform: rotate(-20deg); }
+    100%{ transform: rotate(0); }
+}
+@keyframes animacao-barra-tempo{
+    0% { width: 100%; } 
+    100% { width: 0%}
+}
+
+@keyframes subir-pino{
+    0% { top: 0px; }
+    100% { top: -40px; }
+}
