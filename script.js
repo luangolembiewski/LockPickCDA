@@ -41,6 +41,8 @@ function time(){
             time();
         }else if(w==false){
             console.log("Fim");
+            titulo.innerText="TEMPO ESGOTADO!"
+            titulo.style.color="#c80000";
             chaveHorizontal.classList.remove('chave-horizontal')
             document.removeEventListener('keydown' , clicou)
             chaveHorizontal.style.left = '460px'
@@ -88,6 +90,8 @@ function win(){
     ){
         w=true
         titulo.innerText="DESTRAVADO!"
+        
+        titulo.style.color="#00aa00";
         chaveHorizontal.classList.remove('chave-horizontal')
         document.removeEventListener('keydown' , clicou)
         chaveHorizontal.style.left = '460px'
